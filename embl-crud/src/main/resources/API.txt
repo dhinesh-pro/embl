@@ -1,0 +1,100 @@
+<h4>API Details</h4>
+API Name  - List User
+URL - http://localhost:8080/users
+Method - Get
+Header - Content-Type: application/json
+Response -
+{
+    "status": 200,
+    "message": "User list fetched successfully.",
+    "result": [
+        {
+            "id": 1,
+            "firstName": "Dhinesh",
+            "lastName": "Kumar",
+            "age": 23,
+			"hobbies":["Reading","TV"]
+            "favColor": Red
+        },
+        {
+            "id": 1,
+            "firstName": "Dhinesh",
+            "lastName": "Kumar",
+            "age": 32,
+			"hobbies":["Reading","TV"]
+            "favColor": Red
+        }
+    ]
+}
+
+API Name  - Create User
+URL - http://localhost:8080/users
+Method - POST
+Header - Content-Type: application/json
+Body -
+{
+	"id": 1,
+    "firstName": "Dhinesh",
+    "lastName": "Kumar",
+    "age": 23,
+	"hobbies":["Reading","TV"]
+    "favColor": Red
+}
+
+Response -
+
+{
+    "status": 200,
+    "message": "User saved successfully.",
+    "result": {
+        "id": 1,
+		"firstName": "Dhinesh",
+		"lastName": "Kumar",
+		"age": 23,
+		"hobbies":["Reading","TV"]
+		"favColor": Red
+    }
+}
+
+API Name  - Update User
+URL - http://localhost:8080/users/4
+Method - PUT
+Header - Content-Type: application/json
+   
+Body -
+{
+	"id": 1,
+	"firstName": "Ibhanan",
+	"lastName": "Dhinesh",
+	"age": 23,
+	"hobbies":["Reading","TV"]
+	"favColor": Red
+}
+
+Response -
+
+{
+    "status": 200,
+    "message": "User updated successfully.",
+    "result": {
+        "id": 1,
+		"firstName": "Ibhanan",
+		"lastName": "Dhinesh",
+		"age": 23,
+		"hobbies":["Reading","TV"]
+		"favColor": Red
+    }
+}
+
+API Name  - Delete User
+URL - http://localhost:8080/users/4
+Method - DELETE
+Header - Content-Type: application/json
+   
+Response -
+{
+    "status": 200,
+    "message": "User deleted successfully.",
+    "result": null
+}
+
